@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9F6DAF8A1BEE2C33CD8A819B /* libPods-SDKSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EB76ACC311E7FDF438499A /* libPods-SDKSample.a */; };
+		A3048A7D2165238200B4CB36 /* AuthorizationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3048A7C2165238200B4CB36 /* AuthorizationController.swift */; };
 		A35483ED21651E7600F316E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35483EC21651E7600F316E5 /* AppDelegate.swift */; };
 		A35483EF21651E7600F316E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35483EE21651E7600F316E5 /* ViewController.swift */; };
 		A35483F221651E7600F316E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A35483F021651E7600F316E5 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		3B5244FD7A6235E449207FB1 /* Pods-SDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDKSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SDKSample/Pods-SDKSample.release.xcconfig"; sourceTree = "<group>"; };
 		57EB76ACC311E7FDF438499A /* libPods-SDKSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SDKSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3048A7C2165238200B4CB36 /* AuthorizationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationController.swift; sourceTree = "<group>"; };
 		A35483E921651E7600F316E5 /* SDKSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35483EC21651E7600F316E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A35483EE21651E7600F316E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				A35483EC21651E7600F316E5 /* AppDelegate.swift */,
+				A3048A7C2165238200B4CB36 /* AuthorizationController.swift */,
 				A35483EE21651E7600F316E5 /* ViewController.swift */,
 				A35483F021651E7600F316E5 /* Main.storyboard */,
 				A35483F321651E7700F316E5 /* Assets.xcassets */,
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3048A7D2165238200B4CB36 /* AuthorizationController.swift in Sources */,
 				A35483EF21651E7600F316E5 /* ViewController.swift in Sources */,
 				A35483ED21651E7600F316E5 /* AppDelegate.swift in Sources */,
 			);
@@ -351,7 +355,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YGGJX44TB8;
 				INFOPLIST_FILE = SDKSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.talkdesk.SDKSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -367,7 +374,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YGGJX44TB8;
 				INFOPLIST_FILE = SDKSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.talkdesk.SDKSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
