@@ -1,0 +1,16 @@
+PODS:
+  - TalkdeskSDK (0.5.0)
+
+DEPENDENCIES:
+  - TalkdeskSDK (~> 0.5)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - TalkdeskSDK
+
+SPEC CHECKSUMS:
+  TalkdeskSDK: e108d444dd49e91824e3a12454800e63c54f4f05
+
+PODFILE CHECKSUM: 46d49049adc17501aaaa8901d872fd826aeae15f
+
+COCOAPODS: 1.5.0
