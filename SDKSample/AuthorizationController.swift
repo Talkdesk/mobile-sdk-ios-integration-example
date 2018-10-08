@@ -25,7 +25,9 @@ class AuthorizationService {
 
     // MARK: - Service configuration
 
-    /// The URL where the authorization server is running.
+    /// The URL (host + path) where the authorization server is running. The value provided
+    /// in this sample is the correct one for when the mobile-sdk-ruby-server-sample is run
+    /// locally using `foreman start` - along with the default App ID value.
     ///
     static let authorizationEndpoint = "http://localhost:5000/token/example-app-ios"
 
