@@ -10,10 +10,31 @@ This repository contains a simple iOS project that integrates with Talkdesk SDK 
 5. Run the app on a simulator or device and tap "**Start Interaction**". You should see the following message and screen:
 
 
-![integration](integration.png)
+![Default behavior of the example app.](Images/integration.png)
 
 5. If this is not what you are seeing, here is a quick troubleshooting checklist:
 
    1. **Is the server running and reachable?** Make sure the Ruby Server Sample is running on the same network as your device or simulator. You can use a proxy such as [Charles](https://www.charlesproxy.com) to make sure the request is being made and to verify its contents.
 
    2. **Does the server return a 201 status code?** Check the logs of the Ruby Server Sample. Did it receive a request when you pressed the button? What status code did it respond with? If the status code is not 201, check the service configuration both on the Server Sample (`.env`) and app.
+
+## How to configure an intention
+
+This example app is using the SDK's storyboard-based integration rather than programmatic integration.
+
+If your account has different flows you want to try out, follow the steps described below to change the intention being used.
+
+![How to change the intention being used.](Images/intention.png)
+
+1. Open **Main.storyboard**.
+2. Under the **Interaction View Controller Scene**, click on **Interaction View Controller**.
+3. Open the Identity Inspector tab.
+4. Under **User Defined Runtime Attributes**, change the value field of `intentionName` to the desired intention.
+
+## Authentication diagrams
+
+In the following diagram you can see how the authentication is performed and which components are involved.
+![Talkdesk ID Authentication](Images/auth.png)
+
+For a production-grade application we recommend the more sophisticated but more secure implementation with push notifications.
+![Talkdesk ID Push Authentication](Images/auth-push.png)
