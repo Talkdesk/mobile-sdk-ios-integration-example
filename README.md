@@ -1,9 +1,9 @@
 # Talkdesk SDK iOS Integration Example
-This repository contains a simple iOS project that integrates with Talkdesk SDK in order to run an interaction. It implements the application-specific part of the [authorization mechanism](http://mobile-dev.talkdeskapp.com/ios/docs/release/0.5.0/authorization.html) of the SDK and can be used with the [Talkdesk SDK Ruby Server Sample](https://www.github.com/Talkdesk/mobile-sdk-ruby-server-sample).
+This repository contains a simple iOS project that integrates with Talkdesk SDK in order to run an interaction. It implements the application-specific part of the [authorization mechanism](http://mobile-dev.talkdeskapp.com/ios/docs/release/0.5.0/authorization.html) of the SDK and can be used with the [Talkdesk Mobile SDK Customer Authentication Service sample](https://github.com/Talkdesk/mobile-sdk-customer-ruby-authentication-service-example).
 
 ## How to Run
 
-1. Check out the [Talkdesk SDK Ruby Server Sample](https://www.github.com/Talkdesk/mobile-sdk-ruby-server-sample) and follow the instructions to run it locally using the account-specific [OAuth client secrets](https://docs.talkdesk.com/docs/auth) provided by Talkdesk.
+1. Check out the [Talkdesk Mobile SDK Customer Authentication Service sample](https://github.com/Talkdesk/mobile-sdk-customer-ruby-authentication-service-example) and follow the instructions to run it locally using the account-specific [OAuth client secrets](https://docs.talkdesk.com/docs/auth) provided by Talkdesk.
 2. Make sure you have the latest **Xcode** and **Cocoapods** installed. Check out the project and run `pod install` on the root folder.
 3. Open **SDKSample.xcworkspace** and navigate to `AuthorizationController.swift` under the **Service configuration** mark. Fill the values for the Basic Auth username and password in `authorizationUsername` and `authorizationPassword`.
 4. Update the `authorizationEndpoint` value accordingly if you have made changes to the Ruby Server Sample code that affect the endpoint it is running on. Replace `localhost` with the machine's IP address if you intend to run it in a different device (rather than a simulator).
